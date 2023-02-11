@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kevin</title>
+   
+    <link rel="stylesheet" href="css.css">
+    <script src="SVG.js"></script>
+    <script>
+        function kevin (){
+            let tab = document.createElement('table');
+           
+            document.getElementById('body').appendChild(tab);
+          
+        
+            let row_1= document.createElement('tr');
+            let col_1 = document.createElement('th');
+             col_1.innerHTML='hallo';
+            let col_2=document.createElement('th');
+            col_2.innerHTML='kevin';
+            let col_3=document.createElement('th');
+            col_3.innerHTML='Ludovic';
+            
+            row_1.appendChild(col_1);
+            row_1.appendChild(col_2);
+            row_1.appendChild(col_3);
+            tab.appendChild(row_1);
+            
+            let row_2 = document.createElement('tr');
+            let data_1 = document.createElement('td');
+            data_1.innerHTML='gar';
+            let data_2=document.createElement('td');
+            data_2.innerHTML='go';
+            let data_3 = document.createElement('td');
+            data_3.innerHTML='jesuis';
+            
+            row_2.appendChild(data_1);
+            row_2.appendChild(data_2);
+            row_2.appendChild(data_3);
+            tab.appendChild(row_2);
+        }
+    </script>
+</head>
+<body id='body' onload="kevin();">
+    <input id="taste" type="button" value="color">
+    <button onclick="alert('Ich bin Kevin')">click here</button>
+     <script src="diagramm.js"></script>
+<!--
+    <svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'>
+        <rect x='0' y='0' width='200' height='200' style='fill:yellow;
+                                                          stroke:none'/>
+-->
+<!--
+       <line x1="0" y1="0" x2="200" y2="200" style="stroke:blue">
+                <animate attributeName="x1" to="40" dur="1s" repeatCount="indefinite"/>
+                <animate attributeName="x2" to="160" dur="1s" repeatCount="indefinite"/>
+            </line>
+            <line x1="40" y1="0" x2="160" y2="200" style="stroke:blue">
+                <animate attributeName="x1" to="80" dur="1s" repeatCount="indefinite"/>
+                <animate attributeName="x2" to="120" dur="1s" repeatCount="indefinite"/>
+            </line>
+           
+            <line x1="200" y1="0" x2="0" y2="200" style="stroke:blue">
+                <animate attributeName="y1" to="40" dur="1s" repeatCount="indefinite"/>
+                <animate attributeName="y2" to="160" dur="1s" repeatCount="indefinite"/>
+            </line>
+            <line x1="200" y1="40" x2="0" y2="160" style="stroke:blue">
+                <animate attributeName="y1" to="80" dur="1s" repeatCount="indefinite"/>
+                <animate attributeName="y2" to="120" dur="1s" repeatCount="indefinite"/>
+            </line>
+           
+            <line x1="200" y1="160" x2="0" y2="40" style="stroke:blue">
+                <animate attributeName="y1" to="200" dur="1s" repeatCount="indefinite"/>
+                <animate attributeName="y2" to="0" dur="1s" repeatCount="indefinite"/>
+            </line>
+-->
+    <table>
+        <tr>
+            <th>hallo</th>
+            <th>hallo</th>
+            <th>hallo</th>
+        </tr>
+        <tr>
+            <td>kevin</td>
+            <td>kevin</td>
+            <td>kevin</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
